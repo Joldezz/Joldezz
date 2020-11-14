@@ -1,0 +1,114 @@
+wait(2)
+local function callback(text)
+    if text == "Yes" then
+	print("User said yes")
+    elseif text == "No" then
+	print("User said no")
+    end
+end
+
+local bindableFunction= Instance.new("BindableFunction")
+
+game.StarterGui:SetCore("SendNotification", {
+    Title = "Joldezz island";
+    Text = "LOADING.";
+    Icon = "RBXID OR BLANK";
+    Duration = "DURATION IN SECONDS";
+    callbakc = bindableFunction;
+    Button1 = "";
+    Button2 = "";
+})
+wait(2)
+local function callback(text)
+    if text == "Yes" then
+	print("User said yes")
+    elseif text == "No" then
+	print("User said no")
+    end
+end
+
+local bindableFunction= Instance.new("BindableFunction")
+
+game.StarterGui:SetCore("SendNotification", {
+    Title = "Joldezz Island";
+    Text = "LOADING..";
+    Icon = "RBXID OR BLANK";
+    Duration = "DURATION IN SECONDS";
+    callbakc = bindableFunction;
+    Button1 = "";
+    Button2 = "";
+})
+wait(2)
+local function callback(text)
+    if text == "Yes" then
+	print("User said yes")
+    elseif text == "No" then
+	print("User said no")
+    end
+end
+
+local bindableFunction= Instance.new("BindableFunction")
+
+game.StarterGui:SetCore("SendNotification", {
+    Title = "Joldezz Island";
+    Text = "LOADING...";
+    Icon = "RBXID OR BLANK";
+    Duration = "DURATION IN SECONDS";
+    callbakc = bindableFunction;
+    Button1 = "";
+    Button2 = "";
+})
+wait(1)
+local function callback(text)
+    if text == "Yes" then
+	print("User said yes")
+    elseif text == "No" then
+	print("User said no")
+    end
+end
+
+local bindableFunction= Instance.new("BindableFunction")
+
+game.StarterGui:SetCore("SendNotification", {
+    Title = "Joldezz Island";
+    Text = "LOADING SUCESFULL";
+    Icon = "RBXID OR BLANK";
+    Duration = "DURATION IN SECONDS";
+    callbakc = bindableFunction;
+    Button1 = "Ok , Boomer";
+    Button2 = "";
+})
+
+local Library = loadstring(game:HttpGet('https://raw.githubusercontent.com/skeletalz/Main-Stuff/master/Magik%20Hax%20Library'))() --Ui библеотека
+
+local Main = Library.Category("Joldezz Island","Waypoints",Color3.fromRGB(0,204,204)) -- Цвет и окно Ui библеотеки. Кликабельный отдел.
+
+Main:Section("Waypoints") --Создает текст в окне
+
+Main:Button("Spawn V.W",function() --телепортирует по нажатию кнопки по координатам.
+   game.Players.LocalPlayer.Character:MoveTo(Vector3.new( 16.4067535, 199.967926 , -633.61037))
+end)
+
+Main:Button("Home",function() --телепортирует по нажатию кнопки по координатам.
+   game.Players.LocalPlayer.Character:MoveTo(Vector3.new( 10006.2334, 37.697979, 9867.35449))
+end)
+
+Main:Section("NPC") --Создает текст в окне
+
+Main:Button("Adventurer",function() --телепортирует по нажатию кнопки по координатам.
+   game.Players.LocalPlayer.Character:MoveTo(Vector3.new( 71.3120422, 180.998001, -692.816772))
+end)
+
+Main:Button("Totems",function() --телепортирует по нажатию кнопки по координатам.
+   game.Players.LocalPlayer.Character:MoveTo(Vector3.new( 90.1209106, 180.998001, -691.834045))
+end)
+
+Main:Button("Baker",function() --телепортирует по нажатию кнопки по координатам.
+   game.Players.LocalPlayer.Character:MoveTo(Vector3.new( 101.120804, 180.998001, -692.795471))
+end)
+
+Main:Section("Other Scripts") --Создает текст в окне.
+
+Main:Button("J Tools",function() --Другой очень важный скрипт. Для игры Islands
+   loadstring(game:HttpGet('https://raw.githubusercontent.com/Joldezz/Joldezz/main/Jtools'))()
+end)
