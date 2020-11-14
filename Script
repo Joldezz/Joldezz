@@ -1,0 +1,112 @@
+wait(1)
+local function callback(text)
+    if text == "Yes" then
+	print("User said yes")
+    elseif text == "No" then
+	print("User said no")
+    end
+end
+
+local bindableFunction= Instance.new("BindableFunction")
+
+game.StarterGui:SetCore("SendNotification", {
+    Title = "Joldezz Tools";
+    Text = "LOADING.";
+    Icon = "RBXID OR BLANK";
+    Duration = "DURATION IN SECONDS";
+    callbakc = bindableFunction;
+    Button1 = "";
+    Button2 = "";
+})
+
+wait(2)
+local function callback(text)
+    if text == "Yes" then
+	print("User said yes")
+    elseif text == "No" then
+	print("User said no")
+    end
+end
+
+local bindableFunction= Instance.new("BindableFunction")
+
+game.StarterGui:SetCore("SendNotification", {
+    Title = "Joldezz Tools";
+    Text = "LOADING..";
+    Icon = "RBXID OR BLANK";
+    Duration = "DURATION IN SECONDS";
+    callbakc = bindableFunction;
+    Button1 = "";
+    Button2 = "";
+})
+
+wait(3)
+local function callback(text)
+    if text == "Yes" then
+	print("User said yes")
+    elseif text == "No" then
+	print("User said no")
+    end
+end
+
+local bindableFunction= Instance.new("BindableFunction")
+
+game.StarterGui:SetCore("SendNotification", {
+    Title = "Joldezz Tools";
+    Text = "LOADING...";
+    Icon = "RBXID OR BLANK";
+    Duration = "DURATION IN SECONDS";
+    callbakc = bindableFunction;
+    Button1 = "";
+    Button2 = "";
+})
+
+wait(4)
+local function callback(text)
+    if text == "Yes" then
+	print("User said yes")
+    elseif text == "No" then
+	print("User said no")
+    end
+end
+
+local bindableFunction= Instance.new("BindableFunction")
+
+game.StarterGui:SetCore("SendNotification", {
+    Title = "Joldezz Tools";
+    Text = "SUCESSFULL LOADED";
+    Icon = "RBXID OR BLANK";
+    Duration = "DURATION IN SECONDS";
+    callbakc = bindableFunction;
+    Button1 = "Ok , Boomer";
+    Button2 = "";
+})
+
+local Library = loadstring(game:HttpGet('https://raw.githubusercontent.com/skeletalz/Main-Stuff/master/Magik%20Hax%20Library'))() --Ui библеотека
+
+local Main = Library.Category("Joldezz Tools","Helper",Color3.fromRGB(0,204,204)) -- Цвет и окно Ui библеотеки. Кликабельный отдел.
+
+Main:Section("Coordinates") --Создает текст в окне.
+
+Main:Button("Cord Grabber",function() --Берет и копирует при нажатии на кнопку координаты.
+   loadstring(game:HttpGet("https://pastebin.com/raw/dmkJpPe9", true))()
+end)
+
+Main:Button("Cord Teleport",function() --Телепорт по координатам.
+   loadstring(game:HttpGet("https://pastebin.com/raw/b3ZXrkU6", true))()
+end)
+
+Main:Section("Other") --Создает текст в окне.
+
+Main:Button("Btools",function() --Даст вам btools чтоыб уничтожать предметы/айтемы. (Удаления видите только вы)
+   loadstring(game:HttpGet("https://pastebin.com/raw/LETNPL0E", true))()
+end)
+
+Main:Button("Fly",function() --Флай , активация/деактивация на "E" или же на русскую "У"
+   loadstring(game:HttpGet("https://pastebin.com/raw/phV2U4rU", true))()
+end)
+
+Main:Button("Anti Kick",function() --Перезаходит в игру если вас кикнуло.
+   loadstring(game:HttpGet("https://pastebin.com/HLwrw9SV", true))()
+end)
+
