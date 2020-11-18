@@ -1,4 +1,42 @@
-wait(10)
+wait(1)
+game:GetService("StarterGui"):SetCore("SendNotification",{
+Title = "JOLDEZZ MENU",
+Text = "LOADING"
+})
+wait(1)
+game:GetService("StarterGui"):SetCore("SendNotification",{
+Title = "JOLDEZZ MENU",
+Text = "LOADING SUCESSFULL"
+})
+
+local library = loadstring(game:HttpGet(('https://raw.githubusercontent.com/AikaV3rm/UiLib/master/Lib.lua')))()
+
+local w = library:CreateWindow("Miscellaneous")
+
+local b = w:CreateFolder("Joldezz Menu")
+
+b:Button("Ctrl Click TP",function()
+ loadstring(game:HttpGet("https://pastebin.com/raw/BSHwUSkP", true))()
+end)
+
+b:Button("Speed Hack",function()
+  game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 100
+end)
+
+b:Button("Jump Power",function()
+  game.Players.LocalPlayer.Character.Humanoid.JumpPower = 125
+end)
+
+b:Button("Fly",function()
+  loadstring(game:HttpGet("https://pastebin.com/raw/phV2U4rU", true))()
+end)
+
+local w = library:CreateWindow("Auto Farm")
+
+local b = w:CreateFolder("Joldezz Menu")
+
+b:Button("Once",function()
+
 local plr = game:service"Players".LocalPlayer;
 local tween_s = game:service"TweenService";
 local info = TweenInfo.new(1,Enum.EasingStyle.Quad);
@@ -34,7 +72,7 @@ tp( -24.1613674, 51.6940575, 8811.13184);
 wait(33)
 local plr = game:service"Players".LocalPlayer;
 local tween_s = game:service"TweenService";
-local info = TweenInfo.new(1,Enum.EasingStyle.Quad);
+local info = TweenInfo.new(3,Enum.EasingStyle.Quad);
 function tp(...)
    local tic_k = tick();
    local params = {...};
@@ -47,10 +85,15 @@ function tp(...)
 end
 tp(-57.0655861, 70.9394608, 9498.19629);
 end)
-wait(10)
-local plr = game:service"Players".LocalPlayer;
+
+local w = library:CreateWindow("Teleport")
+
+local b = w:CreateFolder("Joldezz Menu")
+
+b:Button("Green Base",function()
+  local plr = game:service"Players".LocalPlayer;
 local tween_s = game:service"TweenService";
-local info = TweenInfo.new(1,Enum.EasingStyle.Quad);
+local info = TweenInfo.new(3,Enum.EasingStyle.Quad);
 function tp(...)
    local tic_k = tick();
    local params = {...};
@@ -61,45 +104,13 @@ function tp(...)
    end)
    if not tween then return err end
 end
-tp(-51.0952873, 90.8093796, -1.4729);
-
-wait(1)
-local plr = game:service"Players".LocalPlayer;
-local tween_s = game:service"TweenService";
-local info = TweenInfo.new(40,Enum.EasingStyle.Quad);
-function tp(...)
-   local tic_k = tick();
-   local params = {...};
-   local cframe = CFrame.new(params[1],params[2],params[3]);
-   local tween,err = pcall(function()
-       local tween = tween_s:Create(plr.Character["HumanoidRootPart"],info,{CFrame=cframe});
-       tween:Play();
-   end)
-   if not tween then return err end
-end
-tp( -24.1613674, 51.6940575, 8811.13184);
-
-
-wait(33)
-local plr = game:service"Players".LocalPlayer;
-local tween_s = game:service"TweenService";
-local info = TweenInfo.new(1,Enum.EasingStyle.Quad);
-function tp(...)
-   local tic_k = tick();
-   local params = {...};
-   local cframe = CFrame.new(params[1],params[2],params[3]);
-   local tween,err = pcall(function()
-       local tween = tween_s:Create(plr.Character["HumanoidRootPart"],info,{CFrame=cframe});
-       tween:Play();
-   end)
-   if not tween then return err end
-end
-tp(-57.0655861, 70.9394608, 9498.19629);
+tp(-538.582764, -9.70199776, 293.259338);
 end)
-wait(10)
-local plr = game:service"Players".LocalPlayer;
+
+b:Button("Yellow Base",function()
+  local plr = game:service"Players".LocalPlayer;
 local tween_s = game:service"TweenService";
-local info = TweenInfo.new(1,Enum.EasingStyle.Quad);
+local info = TweenInfo.new(3,Enum.EasingStyle.Quad);
 function tp(...)
    local tic_k = tick();
    local params = {...};
@@ -110,45 +121,14 @@ function tp(...)
    end)
    if not tween then return err end
 end
-tp(-51.0952873, 90.8093796, -1.4729);
-
-wait(1)
-local plr = game:service"Players".LocalPlayer;
-local tween_s = game:service"TweenService";
-local info = TweenInfo.new(40,Enum.EasingStyle.Quad);
-function tp(...)
-   local tic_k = tick();
-   local params = {...};
-   local cframe = CFrame.new(params[1],params[2],params[3]);
-   local tween,err = pcall(function()
-       local tween = tween_s:Create(plr.Character["HumanoidRootPart"],info,{CFrame=cframe});
-       tween:Play();
-   end)
-   if not tween then return err end
-end
-tp( -24.1613674, 51.6940575, 8811.13184);
-
-
-wait(33)
-local plr = game:service"Players".LocalPlayer;
-local tween_s = game:service"TweenService";
-local info = TweenInfo.new(1,Enum.EasingStyle.Quad);
-function tp(...)
-   local tic_k = tick();
-   local params = {...};
-   local cframe = CFrame.new(params[1],params[2],params[3]);
-   local tween,err = pcall(function()
-       local tween = tween_s:Create(plr.Character["HumanoidRootPart"],info,{CFrame=cframe});
-       tween:Play();
-   end)
-   if not tween then return err end
-end
-tp(-57.0655861, 70.9394608, 9498.19629);
+tp(-538.040222, -9.70199776, 640.19989);
 end)
-wait(10)
+
+b:Button("White Base",function()
+  
 local plr = game:service"Players".LocalPlayer;
 local tween_s = game:service"TweenService";
-local info = TweenInfo.new(1,Enum.EasingStyle.Quad);
+local info = TweenInfo.new(3,Enum.EasingStyle.Quad);
 function tp(...)
    local tic_k = tick();
    local params = {...};
@@ -159,45 +139,13 @@ function tp(...)
    end)
    if not tween then return err end
 end
-tp(-51.0952873, 90.8093796, -1.4729);
-
-wait(1)
-local plr = game:service"Players".LocalPlayer;
-local tween_s = game:service"TweenService";
-local info = TweenInfo.new(40,Enum.EasingStyle.Quad);
-function tp(...)
-   local tic_k = tick();
-   local params = {...};
-   local cframe = CFrame.new(params[1],params[2],params[3]);
-   local tween,err = pcall(function()
-       local tween = tween_s:Create(plr.Character["HumanoidRootPart"],info,{CFrame=cframe});
-       tween:Play();
-   end)
-   if not tween then return err end
-end
-tp( -24.1613674, 51.6940575, 8811.13184);
-
-
-wait(33)
-local plr = game:service"Players".LocalPlayer;
-local tween_s = game:service"TweenService";
-local info = TweenInfo.new(1,Enum.EasingStyle.Quad);
-function tp(...)
-   local tic_k = tick();
-   local params = {...};
-   local cframe = CFrame.new(params[1],params[2],params[3]);
-   local tween,err = pcall(function()
-       local tween = tween_s:Create(plr.Character["HumanoidRootPart"],info,{CFrame=cframe});
-       tween:Play();
-   end)
-   if not tween then return err end
-end
-tp(-57.0655861, 70.9394608, 9498.19629);
+tp(-50.0643387, -9.7019968, -554.981201);
 end)
-wait(10)
+
+b:Button("Blue Base",function()
 local plr = game:service"Players".LocalPlayer;
 local tween_s = game:service"TweenService";
-local info = TweenInfo.new(1,Enum.EasingStyle.Quad);
+local info = TweenInfo.new(3,Enum.EasingStyle.Quad);
 function tp(...)
    local tic_k = tick();
    local params = {...};
@@ -208,45 +156,13 @@ function tp(...)
    end)
    if not tween then return err end
 end
-tp(-51.0952873, 90.8093796, -1.4729);
-
-wait(1)
-local plr = game:service"Players".LocalPlayer;
-local tween_s = game:service"TweenService";
-local info = TweenInfo.new(40,Enum.EasingStyle.Quad);
-function tp(...)
-   local tic_k = tick();
-   local params = {...};
-   local cframe = CFrame.new(params[1],params[2],params[3]);
-   local tween,err = pcall(function()
-       local tween = tween_s:Create(plr.Character["HumanoidRootPart"],info,{CFrame=cframe});
-       tween:Play();
-   end)
-   if not tween then return err end
-end
-tp( -24.1613674, 51.6940575, 8811.13184);
-
-
-wait(33)
-local plr = game:service"Players".LocalPlayer;
-local tween_s = game:service"TweenService";
-local info = TweenInfo.new(1,Enum.EasingStyle.Quad);
-function tp(...)
-   local tic_k = tick();
-   local params = {...};
-   local cframe = CFrame.new(params[1],params[2],params[3]);
-   local tween,err = pcall(function()
-       local tween = tween_s:Create(plr.Character["HumanoidRootPart"],info,{CFrame=cframe});
-       tween:Play();
-   end)
-   if not tween then return err end
-end
-tp(-57.0655861, 70.9394608, 9498.19629);
+tp(431.040314, -9.7019968, 299.713593);
 end)
-wait(10)
+
+b:Button("Black Base",function()
 local plr = game:service"Players".LocalPlayer;
 local tween_s = game:service"TweenService";
-local info = TweenInfo.new(1,Enum.EasingStyle.Quad);
+local info = TweenInfo.new(3,Enum.EasingStyle.Quad);
 function tp(...)
    local tic_k = tick();
    local params = {...};
@@ -257,45 +173,13 @@ function tp(...)
    end)
    if not tween then return err end
 end
-tp(-51.0952873, 90.8093796, -1.4729);
-
-wait(1)
-local plr = game:service"Players".LocalPlayer;
-local tween_s = game:service"TweenService";
-local info = TweenInfo.new(40,Enum.EasingStyle.Quad);
-function tp(...)
-   local tic_k = tick();
-   local params = {...};
-   local cframe = CFrame.new(params[1],params[2],params[3]);
-   local tween,err = pcall(function()
-       local tween = tween_s:Create(plr.Character["HumanoidRootPart"],info,{CFrame=cframe});
-       tween:Play();
-   end)
-   if not tween then return err end
-end
-tp( -24.1613674, 51.6940575, 8811.13184);
-
-
-wait(33)
-local plr = game:service"Players".LocalPlayer;
-local tween_s = game:service"TweenService";
-local info = TweenInfo.new(1,Enum.EasingStyle.Quad);
-function tp(...)
-   local tic_k = tick();
-   local params = {...};
-   local cframe = CFrame.new(params[1],params[2],params[3]);
-   local tween,err = pcall(function()
-       local tween = tween_s:Create(plr.Character["HumanoidRootPart"],info,{CFrame=cframe});
-       tween:Play();
-   end)
-   if not tween then return err end
-end
-tp(-57.0655861, 70.9394608, 9498.19629);
+tp(-50.0643387, -9.7019968, -554.981201);
 end)
-wait(10)
+
+b:Button("Pink Base",function()
 local plr = game:service"Players".LocalPlayer;
 local tween_s = game:service"TweenService";
-local info = TweenInfo.new(1,Enum.EasingStyle.Quad);
+local info = TweenInfo.new(3,Enum.EasingStyle.Quad);
 function tp(...)
    local tic_k = tick();
    local params = {...};
@@ -306,45 +190,13 @@ function tp(...)
    end)
    if not tween then return err end
 end
-tp(-51.0952873, 90.8093796, -1.4729);
-
-wait(1)
-local plr = game:service"Players".LocalPlayer;
-local tween_s = game:service"TweenService";
-local info = TweenInfo.new(40,Enum.EasingStyle.Quad);
-function tp(...)
-   local tic_k = tick();
-   local params = {...};
-   local cframe = CFrame.new(params[1],params[2],params[3]);
-   local tween,err = pcall(function()
-       local tween = tween_s:Create(plr.Character["HumanoidRootPart"],info,{CFrame=cframe});
-       tween:Play();
-   end)
-   if not tween then return err end
-end
-tp( -24.1613674, 51.6940575, 8811.13184);
-
-
-wait(33)
-local plr = game:service"Players".LocalPlayer;
-local tween_s = game:service"TweenService";
-local info = TweenInfo.new(1,Enum.EasingStyle.Quad);
-function tp(...)
-   local tic_k = tick();
-   local params = {...};
-   local cframe = CFrame.new(params[1],params[2],params[3]);
-   local tween,err = pcall(function()
-       local tween = tween_s:Create(plr.Character["HumanoidRootPart"],info,{CFrame=cframe});
-       tween:Play();
-   end)
-   if not tween then return err end
-end
-tp(-57.0655861, 70.9394608, 9498.19629);
+tp(430.857849, -9.7019968, 647.203369);
 end)
-wait(10)
+
+b:Button("Red Base",function()
 local plr = game:service"Players".LocalPlayer;
 local tween_s = game:service"TweenService";
-local info = TweenInfo.new(1,Enum.EasingStyle.Quad);
+local info = TweenInfo.new(3,Enum.EasingStyle.Quad);
 function tp(...)
    local tic_k = tick();
    local params = {...};
@@ -355,675 +207,21 @@ function tp(...)
    end)
    if not tween then return err end
 end
-tp(-51.0952873, 90.8093796, -1.4729);
-
-wait(1)
-local plr = game:service"Players".LocalPlayer;
-local tween_s = game:service"TweenService";
-local info = TweenInfo.new(40,Enum.EasingStyle.Quad);
-function tp(...)
-   local tic_k = tick();
-   local params = {...};
-   local cframe = CFrame.new(params[1],params[2],params[3]);
-   local tween,err = pcall(function()
-       local tween = tween_s:Create(plr.Character["HumanoidRootPart"],info,{CFrame=cframe});
-       tween:Play();
-   end)
-   if not tween then return err end
-end
-tp( -24.1613674, 51.6940575, 8811.13184);
-
-
-wait(33)
-local plr = game:service"Players".LocalPlayer;
-local tween_s = game:service"TweenService";
-local info = TweenInfo.new(1,Enum.EasingStyle.Quad);
-function tp(...)
-   local tic_k = tick();
-   local params = {...};
-   local cframe = CFrame.new(params[1],params[2],params[3]);
-   local tween,err = pcall(function()
-       local tween = tween_s:Create(plr.Character["HumanoidRootPart"],info,{CFrame=cframe});
-       tween:Play();
-   end)
-   if not tween then return err end
-end
-tp(-57.0655861, 70.9394608, 9498.19629);
+tp(430.433929, -9.7019968, -64.1609955);
 end)
-wait(10)
-local plr = game:service"Players".LocalPlayer;
-local tween_s = game:service"TweenService";
-local info = TweenInfo.new(1,Enum.EasingStyle.Quad);
-function tp(...)
-   local tic_k = tick();
-   local params = {...};
-   local cframe = CFrame.new(params[1],params[2],params[3]);
-   local tween,err = pcall(function()
-       local tween = tween_s:Create(plr.Character["HumanoidRootPart"],info,{CFrame=cframe});
-       tween:Play();
-   end)
-   if not tween then return err end
-end
-tp(-51.0952873, 90.8093796, -1.4729);
 
-wait(1)
-local plr = game:service"Players".LocalPlayer;
-local tween_s = game:service"TweenService";
-local info = TweenInfo.new(40,Enum.EasingStyle.Quad);
-function tp(...)
-   local tic_k = tick();
-   local params = {...};
-   local cframe = CFrame.new(params[1],params[2],params[3]);
-   local tween,err = pcall(function()
-       local tween = tween_s:Create(plr.Character["HumanoidRootPart"],info,{CFrame=cframe});
-       tween:Play();
-   end)
-   if not tween then return err end
-end
-tp( -24.1613674, 51.6940575, 8811.13184);
+local w = library:CreateWindow("Credits")
 
+local b = w:CreateFolder("Joldezz Menu")
 
-wait(33)
-local plr = game:service"Players".LocalPlayer;
-local tween_s = game:service"TweenService";
-local info = TweenInfo.new(1,Enum.EasingStyle.Quad);
-function tp(...)
-   local tic_k = tick();
-   local params = {...};
-   local cframe = CFrame.new(params[1],params[2],params[3]);
-   local tween,err = pcall(function()
-       local tween = tween_s:Create(plr.Character["HumanoidRootPart"],info,{CFrame=cframe});
-       tween:Play();
-   end)
-   if not tween then return err end
-end
-tp(-57.0655861, 70.9394608, 9498.19629);
+b:Dropdown("Founders",{"Joldezz"},true,function(mob)
+    print(mob) 
 end)
-wait(10)
-local plr = game:service"Players".LocalPlayer;
-local tween_s = game:service"TweenService";
-local info = TweenInfo.new(1,Enum.EasingStyle.Quad);
-function tp(...)
-   local tic_k = tick();
-   local params = {...};
-   local cframe = CFrame.new(params[1],params[2],params[3]);
-   local tween,err = pcall(function()
-       local tween = tween_s:Create(plr.Character["HumanoidRootPart"],info,{CFrame=cframe});
-       tween:Play();
-   end)
-   if not tween then return err end
-end
-tp(-51.0952873, 90.8093796, -1.4729);
 
-wait(1)
-local plr = game:service"Players".LocalPlayer;
-local tween_s = game:service"TweenService";
-local info = TweenInfo.new(40,Enum.EasingStyle.Quad);
-function tp(...)
-   local tic_k = tick();
-   local params = {...};
-   local cframe = CFrame.new(params[1],params[2],params[3]);
-   local tween,err = pcall(function()
-       local tween = tween_s:Create(plr.Character["HumanoidRootPart"],info,{CFrame=cframe});
-       tween:Play();
-   end)
-   if not tween then return err end
-end
-tp( -24.1613674, 51.6940575, 8811.13184);
-
-
-wait(33)
-local plr = game:service"Players".LocalPlayer;
-local tween_s = game:service"TweenService";
-local info = TweenInfo.new(1,Enum.EasingStyle.Quad);
-function tp(...)
-   local tic_k = tick();
-   local params = {...};
-   local cframe = CFrame.new(params[1],params[2],params[3]);
-   local tween,err = pcall(function()
-       local tween = tween_s:Create(plr.Character["HumanoidRootPart"],info,{CFrame=cframe});
-       tween:Play();
-   end)
-   if not tween then return err end
-end
-tp(-57.0655861, 70.9394608, 9498.19629);
+b:Dropdown("Scripters",{"TheSharkke","risq"},true,function(mob)
+    print(mob) 
 end)
-wait(10)
-local plr = game:service"Players".LocalPlayer;
-local tween_s = game:service"TweenService";
-local info = TweenInfo.new(1,Enum.EasingStyle.Quad);
-function tp(...)
-   local tic_k = tick();
-   local params = {...};
-   local cframe = CFrame.new(params[1],params[2],params[3]);
-   local tween,err = pcall(function()
-       local tween = tween_s:Create(plr.Character["HumanoidRootPart"],info,{CFrame=cframe});
-       tween:Play();
-   end)
-   if not tween then return err end
-end
-tp(-51.0952873, 90.8093796, -1.4729);
 
-wait(1)
-local plr = game:service"Players".LocalPlayer;
-local tween_s = game:service"TweenService";
-local info = TweenInfo.new(40,Enum.EasingStyle.Quad);
-function tp(...)
-   local tic_k = tick();
-   local params = {...};
-   local cframe = CFrame.new(params[1],params[2],params[3]);
-   local tween,err = pcall(function()
-       local tween = tween_s:Create(plr.Character["HumanoidRootPart"],info,{CFrame=cframe});
-       tween:Play();
-   end)
-   if not tween then return err end
-end
-tp( -24.1613674, 51.6940575, 8811.13184);
-
-
-wait(33)
-local plr = game:service"Players".LocalPlayer;
-local tween_s = game:service"TweenService";
-local info = TweenInfo.new(1,Enum.EasingStyle.Quad);
-function tp(...)
-   local tic_k = tick();
-   local params = {...};
-   local cframe = CFrame.new(params[1],params[2],params[3]);
-   local tween,err = pcall(function()
-       local tween = tween_s:Create(plr.Character["HumanoidRootPart"],info,{CFrame=cframe});
-       tween:Play();
-   end)
-   if not tween then return err end
-end
-tp(-57.0655861, 70.9394608, 9498.19629);
-end)
-wait(10)
-local plr = game:service"Players".LocalPlayer;
-local tween_s = game:service"TweenService";
-local info = TweenInfo.new(1,Enum.EasingStyle.Quad);
-function tp(...)
-   local tic_k = tick();
-   local params = {...};
-   local cframe = CFrame.new(params[1],params[2],params[3]);
-   local tween,err = pcall(function()
-       local tween = tween_s:Create(plr.Character["HumanoidRootPart"],info,{CFrame=cframe});
-       tween:Play();
-   end)
-   if not tween then return err end
-end
-tp(-51.0952873, 90.8093796, -1.4729);
-
-wait(1)
-local plr = game:service"Players".LocalPlayer;
-local tween_s = game:service"TweenService";
-local info = TweenInfo.new(40,Enum.EasingStyle.Quad);
-function tp(...)
-   local tic_k = tick();
-   local params = {...};
-   local cframe = CFrame.new(params[1],params[2],params[3]);
-   local tween,err = pcall(function()
-       local tween = tween_s:Create(plr.Character["HumanoidRootPart"],info,{CFrame=cframe});
-       tween:Play();
-   end)
-   if not tween then return err end
-end
-tp( -24.1613674, 51.6940575, 8811.13184);
-
-
-wait(33)
-local plr = game:service"Players".LocalPlayer;
-local tween_s = game:service"TweenService";
-local info = TweenInfo.new(1,Enum.EasingStyle.Quad);
-function tp(...)
-   local tic_k = tick();
-   local params = {...};
-   local cframe = CFrame.new(params[1],params[2],params[3]);
-   local tween,err = pcall(function()
-       local tween = tween_s:Create(plr.Character["HumanoidRootPart"],info,{CFrame=cframe});
-       tween:Play();
-   end)
-   if not tween then return err end
-end
-tp(-57.0655861, 70.9394608, 9498.19629);
-end)
-wait(10)
-local plr = game:service"Players".LocalPlayer;
-local tween_s = game:service"TweenService";
-local info = TweenInfo.new(1,Enum.EasingStyle.Quad);
-function tp(...)
-   local tic_k = tick();
-   local params = {...};
-   local cframe = CFrame.new(params[1],params[2],params[3]);
-   local tween,err = pcall(function()
-       local tween = tween_s:Create(plr.Character["HumanoidRootPart"],info,{CFrame=cframe});
-       tween:Play();
-   end)
-   if not tween then return err end
-end
-tp(-51.0952873, 90.8093796, -1.4729);
-
-wait(1)
-local plr = game:service"Players".LocalPlayer;
-local tween_s = game:service"TweenService";
-local info = TweenInfo.new(40,Enum.EasingStyle.Quad);
-function tp(...)
-   local tic_k = tick();
-   local params = {...};
-   local cframe = CFrame.new(params[1],params[2],params[3]);
-   local tween,err = pcall(function()
-       local tween = tween_s:Create(plr.Character["HumanoidRootPart"],info,{CFrame=cframe});
-       tween:Play();
-   end)
-   if not tween then return err end
-end
-tp( -24.1613674, 51.6940575, 8811.13184);
-
-
-wait(33)
-local plr = game:service"Players".LocalPlayer;
-local tween_s = game:service"TweenService";
-local info = TweenInfo.new(1,Enum.EasingStyle.Quad);
-function tp(...)
-   local tic_k = tick();
-   local params = {...};
-   local cframe = CFrame.new(params[1],params[2],params[3]);
-   local tween,err = pcall(function()
-       local tween = tween_s:Create(plr.Character["HumanoidRootPart"],info,{CFrame=cframe});
-       tween:Play();
-   end)
-   if not tween then return err end
-end
-tp(-57.0655861, 70.9394608, 9498.19629);
-end)
-wait(10)
-local plr = game:service"Players".LocalPlayer;
-local tween_s = game:service"TweenService";
-local info = TweenInfo.new(1,Enum.EasingStyle.Quad);
-function tp(...)
-   local tic_k = tick();
-   local params = {...};
-   local cframe = CFrame.new(params[1],params[2],params[3]);
-   local tween,err = pcall(function()
-       local tween = tween_s:Create(plr.Character["HumanoidRootPart"],info,{CFrame=cframe});
-       tween:Play();
-   end)
-   if not tween then return err end
-end
-tp(-51.0952873, 90.8093796, -1.4729);
-
-wait(1)
-local plr = game:service"Players".LocalPlayer;
-local tween_s = game:service"TweenService";
-local info = TweenInfo.new(40,Enum.EasingStyle.Quad);
-function tp(...)
-   local tic_k = tick();
-   local params = {...};
-   local cframe = CFrame.new(params[1],params[2],params[3]);
-   local tween,err = pcall(function()
-       local tween = tween_s:Create(plr.Character["HumanoidRootPart"],info,{CFrame=cframe});
-       tween:Play();
-   end)
-   if not tween then return err end
-end
-tp( -24.1613674, 51.6940575, 8811.13184);
-
-
-wait(33)
-local plr = game:service"Players".LocalPlayer;
-local tween_s = game:service"TweenService";
-local info = TweenInfo.new(1,Enum.EasingStyle.Quad);
-function tp(...)
-   local tic_k = tick();
-   local params = {...};
-   local cframe = CFrame.new(params[1],params[2],params[3]);
-   local tween,err = pcall(function()
-       local tween = tween_s:Create(plr.Character["HumanoidRootPart"],info,{CFrame=cframe});
-       tween:Play();
-   end)
-   if not tween then return err end
-end
-tp(-57.0655861, 70.9394608, 9498.19629);
-end)
-wait(10)
-local plr = game:service"Players".LocalPlayer;
-local tween_s = game:service"TweenService";
-local info = TweenInfo.new(1,Enum.EasingStyle.Quad);
-function tp(...)
-   local tic_k = tick();
-   local params = {...};
-   local cframe = CFrame.new(params[1],params[2],params[3]);
-   local tween,err = pcall(function()
-       local tween = tween_s:Create(plr.Character["HumanoidRootPart"],info,{CFrame=cframe});
-       tween:Play();
-   end)
-   if not tween then return err end
-end
-tp(-51.0952873, 90.8093796, -1.4729);
-
-wait(1)
-local plr = game:service"Players".LocalPlayer;
-local tween_s = game:service"TweenService";
-local info = TweenInfo.new(40,Enum.EasingStyle.Quad);
-function tp(...)
-   local tic_k = tick();
-   local params = {...};
-   local cframe = CFrame.new(params[1],params[2],params[3]);
-   local tween,err = pcall(function()
-       local tween = tween_s:Create(plr.Character["HumanoidRootPart"],info,{CFrame=cframe});
-       tween:Play();
-   end)
-   if not tween then return err end
-end
-tp( -24.1613674, 51.6940575, 8811.13184);
-
-
-wait(33)
-local plr = game:service"Players".LocalPlayer;
-local tween_s = game:service"TweenService";
-local info = TweenInfo.new(1,Enum.EasingStyle.Quad);
-function tp(...)
-   local tic_k = tick();
-   local params = {...};
-   local cframe = CFrame.new(params[1],params[2],params[3]);
-   local tween,err = pcall(function()
-       local tween = tween_s:Create(plr.Character["HumanoidRootPart"],info,{CFrame=cframe});
-       tween:Play();
-   end)
-   if not tween then return err end
-end
-tp(-57.0655861, 70.9394608, 9498.19629);
-end)
-wait(10)
-local plr = game:service"Players".LocalPlayer;
-local tween_s = game:service"TweenService";
-local info = TweenInfo.new(1,Enum.EasingStyle.Quad);
-function tp(...)
-   local tic_k = tick();
-   local params = {...};
-   local cframe = CFrame.new(params[1],params[2],params[3]);
-   local tween,err = pcall(function()
-       local tween = tween_s:Create(plr.Character["HumanoidRootPart"],info,{CFrame=cframe});
-       tween:Play();
-   end)
-   if not tween then return err end
-end
-tp(-51.0952873, 90.8093796, -1.4729);
-
-wait(1)
-local plr = game:service"Players".LocalPlayer;
-local tween_s = game:service"TweenService";
-local info = TweenInfo.new(40,Enum.EasingStyle.Quad);
-function tp(...)
-   local tic_k = tick();
-   local params = {...};
-   local cframe = CFrame.new(params[1],params[2],params[3]);
-   local tween,err = pcall(function()
-       local tween = tween_s:Create(plr.Character["HumanoidRootPart"],info,{CFrame=cframe});
-       tween:Play();
-   end)
-   if not tween then return err end
-end
-tp( -24.1613674, 51.6940575, 8811.13184);
-
-
-wait(33)
-local plr = game:service"Players".LocalPlayer;
-local tween_s = game:service"TweenService";
-local info = TweenInfo.new(1,Enum.EasingStyle.Quad);
-function tp(...)
-   local tic_k = tick();
-   local params = {...};
-   local cframe = CFrame.new(params[1],params[2],params[3]);
-   local tween,err = pcall(function()
-       local tween = tween_s:Create(plr.Character["HumanoidRootPart"],info,{CFrame=cframe});
-       tween:Play();
-   end)
-   if not tween then return err end
-end
-tp(-57.0655861, 70.9394608, 9498.19629);
-end)
-wait(10)
-local plr = game:service"Players".LocalPlayer;
-local tween_s = game:service"TweenService";
-local info = TweenInfo.new(1,Enum.EasingStyle.Quad);
-function tp(...)
-   local tic_k = tick();
-   local params = {...};
-   local cframe = CFrame.new(params[1],params[2],params[3]);
-   local tween,err = pcall(function()
-       local tween = tween_s:Create(plr.Character["HumanoidRootPart"],info,{CFrame=cframe});
-       tween:Play();
-   end)
-   if not tween then return err end
-end
-tp(-51.0952873, 90.8093796, -1.4729);
-
-wait(1)
-local plr = game:service"Players".LocalPlayer;
-local tween_s = game:service"TweenService";
-local info = TweenInfo.new(40,Enum.EasingStyle.Quad);
-function tp(...)
-   local tic_k = tick();
-   local params = {...};
-   local cframe = CFrame.new(params[1],params[2],params[3]);
-   local tween,err = pcall(function()
-       local tween = tween_s:Create(plr.Character["HumanoidRootPart"],info,{CFrame=cframe});
-       tween:Play();
-   end)
-   if not tween then return err end
-end
-tp( -24.1613674, 51.6940575, 8811.13184);
-
-
-wait(33)
-local plr = game:service"Players".LocalPlayer;
-local tween_s = game:service"TweenService";
-local info = TweenInfo.new(1,Enum.EasingStyle.Quad);
-function tp(...)
-   local tic_k = tick();
-   local params = {...};
-   local cframe = CFrame.new(params[1],params[2],params[3]);
-   local tween,err = pcall(function()
-       local tween = tween_s:Create(plr.Character["HumanoidRootPart"],info,{CFrame=cframe});
-       tween:Play();
-   end)
-   if not tween then return err end
-end
-tp(-57.0655861, 70.9394608, 9498.19629);
-end)
-wait(10)
-local plr = game:service"Players".LocalPlayer;
-local tween_s = game:service"TweenService";
-local info = TweenInfo.new(1,Enum.EasingStyle.Quad);
-function tp(...)
-   local tic_k = tick();
-   local params = {...};
-   local cframe = CFrame.new(params[1],params[2],params[3]);
-   local tween,err = pcall(function()
-       local tween = tween_s:Create(plr.Character["HumanoidRootPart"],info,{CFrame=cframe});
-       tween:Play();
-   end)
-   if not tween then return err end
-end
-tp(-51.0952873, 90.8093796, -1.4729);
-
-wait(1)
-local plr = game:service"Players".LocalPlayer;
-local tween_s = game:service"TweenService";
-local info = TweenInfo.new(40,Enum.EasingStyle.Quad);
-function tp(...)
-   local tic_k = tick();
-   local params = {...};
-   local cframe = CFrame.new(params[1],params[2],params[3]);
-   local tween,err = pcall(function()
-       local tween = tween_s:Create(plr.Character["HumanoidRootPart"],info,{CFrame=cframe});
-       tween:Play();
-   end)
-   if not tween then return err end
-end
-tp( -24.1613674, 51.6940575, 8811.13184);
-
-
-wait(33)
-local plr = game:service"Players".LocalPlayer;
-local tween_s = game:service"TweenService";
-local info = TweenInfo.new(1,Enum.EasingStyle.Quad);
-function tp(...)
-   local tic_k = tick();
-   local params = {...};
-   local cframe = CFrame.new(params[1],params[2],params[3]);
-   local tween,err = pcall(function()
-       local tween = tween_s:Create(plr.Character["HumanoidRootPart"],info,{CFrame=cframe});
-       tween:Play();
-   end)
-   if not tween then return err end
-end
-tp(-57.0655861, 70.9394608, 9498.19629);
-end)
-wait(10)
-local plr = game:service"Players".LocalPlayer;
-local tween_s = game:service"TweenService";
-local info = TweenInfo.new(1,Enum.EasingStyle.Quad);
-function tp(...)
-   local tic_k = tick();
-   local params = {...};
-   local cframe = CFrame.new(params[1],params[2],params[3]);
-   local tween,err = pcall(function()
-       local tween = tween_s:Create(plr.Character["HumanoidRootPart"],info,{CFrame=cframe});
-       tween:Play();
-   end)
-   if not tween then return err end
-end
-tp(-51.0952873, 90.8093796, -1.4729);
-
-wait(1)
-local plr = game:service"Players".LocalPlayer;
-local tween_s = game:service"TweenService";
-local info = TweenInfo.new(40,Enum.EasingStyle.Quad);
-function tp(...)
-   local tic_k = tick();
-   local params = {...};
-   local cframe = CFrame.new(params[1],params[2],params[3]);
-   local tween,err = pcall(function()
-       local tween = tween_s:Create(plr.Character["HumanoidRootPart"],info,{CFrame=cframe});
-       tween:Play();
-   end)
-   if not tween then return err end
-end
-tp( -24.1613674, 51.6940575, 8811.13184);
-
-
-wait(33)
-local plr = game:service"Players".LocalPlayer;
-local tween_s = game:service"TweenService";
-local info = TweenInfo.new(1,Enum.EasingStyle.Quad);
-function tp(...)
-   local tic_k = tick();
-   local params = {...};
-   local cframe = CFrame.new(params[1],params[2],params[3]);
-   local tween,err = pcall(function()
-       local tween = tween_s:Create(plr.Character["HumanoidRootPart"],info,{CFrame=cframe});
-       tween:Play();
-   end)
-   if not tween then return err end
-end
-tp(-57.0655861, 70.9394608, 9498.19629);
-end)
-wait(10)
-local plr = game:service"Players".LocalPlayer;
-local tween_s = game:service"TweenService";
-local info = TweenInfo.new(1,Enum.EasingStyle.Quad);
-function tp(...)
-   local tic_k = tick();
-   local params = {...};
-   local cframe = CFrame.new(params[1],params[2],params[3]);
-   local tween,err = pcall(function()
-       local tween = tween_s:Create(plr.Character["HumanoidRootPart"],info,{CFrame=cframe});
-       tween:Play();
-   end)
-   if not tween then return err end
-end
-tp(-51.0952873, 90.8093796, -1.4729);
-
-wait(1)
-local plr = game:service"Players".LocalPlayer;
-local tween_s = game:service"TweenService";
-local info = TweenInfo.new(40,Enum.EasingStyle.Quad);
-function tp(...)
-   local tic_k = tick();
-   local params = {...};
-   local cframe = CFrame.new(params[1],params[2],params[3]);
-   local tween,err = pcall(function()
-       local tween = tween_s:Create(plr.Character["HumanoidRootPart"],info,{CFrame=cframe});
-       tween:Play();
-   end)
-   if not tween then return err end
-end
-tp( -24.1613674, 51.6940575, 8811.13184);
-
-
-wait(33)
-local plr = game:service"Players".LocalPlayer;
-local tween_s = game:service"TweenService";
-local info = TweenInfo.new(1,Enum.EasingStyle.Quad);
-function tp(...)
-   local tic_k = tick();
-   local params = {...};
-   local cframe = CFrame.new(params[1],params[2],params[3]);
-   local tween,err = pcall(function()
-       local tween = tween_s:Create(plr.Character["HumanoidRootPart"],info,{CFrame=cframe});
-       tween:Play();
-   end)
-   if not tween then return err end
-end
-tp(-57.0655861, 70.9394608, 9498.19629);
-end)
-wait(10)
-local plr = game:service"Players".LocalPlayer;
-local tween_s = game:service"TweenService";
-local info = TweenInfo.new(1,Enum.EasingStyle.Quad);
-function tp(...)
-   local tic_k = tick();
-   local params = {...};
-   local cframe = CFrame.new(params[1],params[2],params[3]);
-   local tween,err = pcall(function()
-       local tween = tween_s:Create(plr.Character["HumanoidRootPart"],info,{CFrame=cframe});
-       tween:Play();
-   end)
-   if not tween then return err end
-end
-tp(-51.0952873, 90.8093796, -1.4729);
-
-wait(1)
-local plr = game:service"Players".LocalPlayer;
-local tween_s = game:service"TweenService";
-local info = TweenInfo.new(40,Enum.EasingStyle.Quad);
-function tp(...)
-   local tic_k = tick();
-   local params = {...};
-   local cframe = CFrame.new(params[1],params[2],params[3]);
-   local tween,err = pcall(function()
-       local tween = tween_s:Create(plr.Character["HumanoidRootPart"],info,{CFrame=cframe});
-       tween:Play();
-   end)
-   if not tween then return err end
-end
-tp( -24.1613674, 51.6940575, 8811.13184);
-
-
-wait(33)
-local plr = game:service"Players".LocalPlayer;
-local tween_s = game:service"TweenService";
-local info = TweenInfo.new(1,Enum.EasingStyle.Quad);
-function tp(...)
-   local tic_k = tick();
-   local params = {...};
-   local cframe = CFrame.new(params[1],params[2],params[3]);
-   local tween,err = pcall(function()
-       local tween = tween_s:Create(plr.Character["HumanoidRootPart"],info,{CFrame=cframe});
-       tween:Play();
-   end)
-   if not tween then return err end
-end
-tp(-57.0655861, 70.9394608, 9498.19629);
+b:Dropdown("Beta Testers",{"IPFGaMeR4T","D1proo","xtra"},true,function(mob)
+    print(mob) 
 end)
