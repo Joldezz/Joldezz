@@ -72,7 +72,7 @@ tp( -24.1613674, 51.6940575, 8811.13184);
 wait(33)
 local plr = game:service"Players".LocalPlayer;
 local tween_s = game:service"TweenService";
-local info = TweenInfo.new(3,Enum.EasingStyle.Quad);
+local info = TweenInfo.new(2,Enum.EasingStyle.Quad);
 function tp(...)
    local tic_k = tick();
    local params = {...};
