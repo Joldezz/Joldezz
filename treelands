@@ -16,6 +16,13 @@ v:Clone().Parent = game.Workspace.Fruits
  end
 end)
 
-b:Button("Ctrl click tp",function()
+b:Label("Ctrl + Click",{ --Создает текст.
+    TextSize = 25; --Размер текста 
+    TextColor = Color3.fromRGB(255,255,255); --Цвет текста
+    BgColor = Color3.fromRGB(69,69,69); --Цвет заднего фона
+    
+})
+
+b:Button("Click TP",function()
 loadstring(game:HttpGet("https://pastebin.com/raw/BSHwUSkP", true))()
 end)
