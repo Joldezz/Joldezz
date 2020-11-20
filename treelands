@@ -1,0 +1,21 @@
+local library = loadstring(game:HttpGet(('https://raw.githubusercontent.com/Joldezz/Joldezz/main/wallyslibary')))() --Библеотека.
+
+local w = library:CreateWindow("Joldezz Menu") --Создает окно.
+
+local b = w:CreateFolder("Tree Lands") --Создает видвужную папку.
+
+b:Button("Silver Sell",function()
+local xd = game.Workspace.Fruits
+xd.Apple.CombinedValue.Value = 1000000000000
+
+local desiredFruit = "Purple Crystal"
+for i, v in pairs(game.Workspace.Fruits:GetChildren()) do
+v.Tooltip.Value = desiredFruit
+v.Name = desiredFruit
+v:Clone().Parent = game.Workspace.Fruits
+ end
+end)
+
+b:Button("Ctrl click tp",function()
+loadstring(game:HttpGet("https://pastebin.com/raw/BSHwUSkP", true))()
+end)
