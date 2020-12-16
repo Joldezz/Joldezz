@@ -1,0 +1,633 @@
+sound = Instance.new("Sound")
+
+sound.SoundId = "rbxassetid://6034656129" --ID
+
+sound.Parent = game.Workspace
+
+sound.Volume = 100
+
+sound:Play()
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local UITextSizeConstraint = Instance.new("UITextSizeConstraint")
+local UIAspectRatioConstraint = Instance.new("UIAspectRatioConstraint")
+local corner = Instance.new("UICorner")
+
+corner.Parent = Frame
+corner.CornerRadius = UDim.new(50, 50)
+
+ScreenGui.Parent = game.CoreGui
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.new(1, 1, 1)
+Frame.Position = UDim2.new(0.39631784, 0, 0.319397986, 0)
+Frame.Size = UDim2.new(0.207364336, 0, 0.357859522, 0)
+
+TextLabel.Parent = Frame
+TextLabel.BackgroundColor3 = Color3.new(0, 0, 0)
+TextLabel.BackgroundTransparency = 1
+TextLabel.BorderColor3 = Color3.new(0, 0.666667, 1)
+TextLabel.Position = UDim2.new(0.0327102542, 0, 0.357102364, 0)
+TextLabel.Size = UDim2.new(0.934579432, 0, 0.233644858, 0)
+TextLabel.Font = Enum.Font.SourceSansBold
+TextLabel.Text = "Joldezz Menu"
+TextLabel.TextColor3 = Color3.new(0, 0, 0)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14
+TextLabel.TextWrapped = true
+
+UITextSizeConstraint.Parent = TextLabel
+UITextSizeConstraint.MaxTextSize = 41
+
+UIAspectRatioConstraint.Parent = Frame
+
+wait(1)
+Frame:Destroy()
+local Joldezz = loadstring(game:HttpGet("https://raw.githubusercontent.com/Kinlei/MaterialLua/master/Module.lua"))()
+local player = game:GetService("Players").LocalPlayer
+local char = player.Character
+local rootpart = char.HumanoidRootPart
+
+local JoldezzMenu = Joldezz.Load({
+     Title = "Joldezz Menu || Build A Boat For Treasure",
+     Style = 2,
+     SizeX = 500,
+     SizeY = 350,
+     Theme = "Dark"
+})
+--Отсеки
+local Page1 = JoldezzMenu.New({
+    Title = "Misc"
+})
+
+local Page2 = JoldezzMenu.New({
+    Title = "Auto Farm"
+})
+
+local Page3 = JoldezzMenu.New({
+    Title = "Teleport"
+})
+
+local Page5 = JoldezzMenu.New({
+    Title = "Other"
+})
+
+local Page4 = JoldezzMenu.New({
+    Title = "Credits"
+})
+--Кнопки
+Page3.Button({
+    Text = "White Base",
+    Callback = function()
+        local plr = game:service"Players".LocalPlayer;
+local tween_s = game:service"TweenService";
+local info = TweenInfo.new(2,Enum.EasingStyle.Quad);
+function tp(...)
+   local tic_k = tick();
+   local params = {...};
+   local cframe = CFrame.new(params[1],params[2],params[3]);
+   local tween,err = pcall(function()
+       local tween = tween_s:Create(plr.Character["HumanoidRootPart"],info,{CFrame=cframe});
+       tween:Play();
+   end)
+   if not tween then return err end
+end
+tp(-53.2635002, 65.9009705, -176.429489);
+wait(2)
+        local plr = game:service"Players".LocalPlayer;
+local tween_s = game:service"TweenService";
+local info = TweenInfo.new(3,Enum.EasingStyle.Quad);
+function tp(...)
+   local tic_k = tick();
+   local params = {...};
+   local cframe = CFrame.new(params[1],params[2],params[3]);
+   local tween,err = pcall(function()
+       local tween = tween_s:Create(plr.Character["HumanoidRootPart"],info,{CFrame=cframe});
+       tween:Play();
+   end)
+   if not tween then return err end
+end
+tp(-49.7023239, -9.8999939, -568.860413);
+    end,
+    Menu = {
+        Information = function(self)
+            UI.Banner({
+                Text = "Base Teleport"            
+            })
+        end
+    }
+    })
+    Page3.Button({
+        Text = "Red Base",
+        Callback = function()
+                    local plr = game:service"Players".LocalPlayer;
+local tween_s = game:service"TweenService";
+local info = TweenInfo.new(2,Enum.EasingStyle.Quad);
+function tp(...)
+   local tic_k = tick();
+   local params = {...};
+   local cframe = CFrame.new(params[1],params[2],params[3]);
+   local tween,err = pcall(function()
+       local tween = tween_s:Create(plr.Character["HumanoidRootPart"],info,{CFrame=cframe});
+       tween:Play();
+   end)
+   if not tween then return err end
+end
+tp(-53.2635002, 65.9009705, -176.429489);
+wait(2)
+            local plr = game:service"Players".LocalPlayer;
+    local tween_s = game:service"TweenService";
+    local info = TweenInfo.new(3,Enum.EasingStyle.Quad);
+    function tp(...)
+       local tic_k = tick();
+       local params = {...};
+       local cframe = CFrame.new(params[1],params[2],params[3]);
+       local tween,err = pcall(function()
+           local tween = tween_s:Create(plr.Character["HumanoidRootPart"],info,{CFrame=cframe});
+           tween:Play();
+       end)
+       if not tween then return err end
+    end
+    tp(448.107819, -9.77999973, -65.300415);
+        end,
+        Menu = {
+            Information = function(self)
+                UI.Banner({
+                    Text = "Base Teleport"            
+                })
+            end
+        }
+        })
+    Page3.Button({
+    Text = "Yellow Base",
+    Callback = function()
+                                local plr = game:service"Players".LocalPlayer;
+local tween_s = game:service"TweenService";
+local info = TweenInfo.new(2,Enum.EasingStyle.Quad);
+function tp(...)
+   local tic_k = tick();
+   local params = {...};
+   local cframe = CFrame.new(params[1],params[2],params[3]);
+   local tween,err = pcall(function()
+       local tween = tween_s:Create(plr.Character["HumanoidRootPart"],info,{CFrame=cframe});
+       tween:Play();
+   end)
+   if not tween then return err end
+end
+tp(-53.2635002, 65.9009705, -176.429489);
+wait(2)
+        local plr = game:service"Players".LocalPlayer;
+local tween_s = game:service"TweenService";
+local info = TweenInfo.new(3,Enum.EasingStyle.Quad);
+function tp(...)
+   local tic_k = tick();
+   local params = {...};
+   local cframe = CFrame.new(params[1],params[2],params[3]);
+   local tween,err = pcall(function()
+       local tween = tween_s:Create(plr.Character["HumanoidRootPart"],info,{CFrame=cframe});
+       tween:Play();
+   end)
+   if not tween then return err end
+end
+tp(-555.89856, -9.70000172, 641.555969);
+        end,
+        Menu = {
+            Information = function(self)
+                UI.Banner({
+                    Text = "Base Teleport"            
+                })
+            end
+        }
+        })
+        Page3.Button({
+            Text = "Blue Base",
+            Callback = function()
+                        local plr = game:service"Players".LocalPlayer;
+local tween_s = game:service"TweenService";
+local info = TweenInfo.new(2,Enum.EasingStyle.Quad);
+function tp(...)
+   local tic_k = tick();
+   local params = {...};
+   local cframe = CFrame.new(params[1],params[2],params[3]);
+   local tween,err = pcall(function()
+       local tween = tween_s:Create(plr.Character["HumanoidRootPart"],info,{CFrame=cframe});
+       tween:Play();
+   end)
+   if not tween then return err end
+end
+tp(-53.2635002, 65.9009705, -176.429489);
+wait(2)
+                local plr = game:service"Players".LocalPlayer;
+        local tween_s = game:service"TweenService";
+        local info = TweenInfo.new(3,Enum.EasingStyle.Quad);
+        function tp(...)
+           local tic_k = tick();
+           local params = {...};
+           local cframe = CFrame.new(params[1],params[2],params[3]);
+           local tween,err = pcall(function()
+               local tween = tween_s:Create(plr.Character["HumanoidRootPart"],info,{CFrame=cframe});
+               tween:Play();
+           end)
+           if not tween then return err end
+        end
+        tp(448.492249, -9.74000072, 300.652863);
+            end,
+            Menu = {
+                Information = function(self)
+                    UI.Banner({
+                        Text = "Base Teleport"            
+                    })
+                end
+            }
+            })
+            Page3.Button({
+                Text = "Pink Base",
+                Callback = function()
+                            local plr = game:service"Players".LocalPlayer;
+local tween_s = game:service"TweenService";
+local info = TweenInfo.new(2,Enum.EasingStyle.Quad);
+function tp(...)
+   local tic_k = tick();
+   local params = {...};
+   local cframe = CFrame.new(params[1],params[2],params[3]);
+   local tween,err = pcall(function()
+       local tween = tween_s:Create(plr.Character["HumanoidRootPart"],info,{CFrame=cframe});
+       tween:Play();
+   end)
+   if not tween then return err end
+end
+tp(-53.2635002, 65.9009705, -176.429489);
+wait(2)
+                    local plr = game:service"Players".LocalPlayer;
+            local tween_s = game:service"TweenService";
+            local info = TweenInfo.new(3,Enum.EasingStyle.Quad);
+            function tp(...)
+               local tic_k = tick();
+               local params = {...};
+               local cframe = CFrame.new(params[1],params[2],params[3]);
+               local tween,err = pcall(function()
+                   local tween = tween_s:Create(plr.Character["HumanoidRootPart"],info,{CFrame=cframe});
+                   tween:Play();
+               end)
+               if not tween then return err end
+            end
+            tp(444.631042, -9.89999676, 647.667358);
+                end,
+                Menu = {
+                    Information = function(self)
+                        UI.Banner({
+                            Text = "Base Teleport"            
+                        })
+                    end
+                }
+                })
+Page3.Button({
+    Text = "Black Base",
+    Callback = function()
+                local plr = game:service"Players".LocalPlayer;
+local tween_s = game:service"TweenService";
+local info = TweenInfo.new(2,Enum.EasingStyle.Quad);
+function tp(...)
+   local tic_k = tick();
+   local params = {...};
+   local cframe = CFrame.new(params[1],params[2],params[3]);
+   local tween,err = pcall(function()
+       local tween = tween_s:Create(plr.Character["HumanoidRootPart"],info,{CFrame=cframe});
+       tween:Play();
+   end)
+   if not tween then return err end
+end
+tp(-53.2635002, 65.9009705, -176.429489);
+wait(2)
+        local plr = game:service"Players".LocalPlayer;
+local tween_s = game:service"TweenService";
+local info = TweenInfo.new(3,Enum.EasingStyle.Quad);
+function tp(...)
+   local tic_k = tick();
+   local params = {...};
+   local cframe = CFrame.new(params[1],params[2],params[3]);
+   local tween,err = pcall(function()
+       local tween = tween_s:Create(plr.Character["HumanoidRootPart"],info,{CFrame=cframe});
+       tween:Play();
+   end)
+   if not tween then return err end
+end
+tp(-555.507202, -7.20032835, -69.2115784);
+    end,
+    Menu = {
+        Information = function(self)
+            UI.Banner({
+                Text = "Base Teleport"            
+            })
+        end
+    }
+    })
+Page3.Button({
+    Text = "Green Base",
+    Callback = function()
+                local plr = game:service"Players".LocalPlayer;
+local tween_s = game:service"TweenService";
+local info = TweenInfo.new(2,Enum.EasingStyle.Quad);
+function tp(...)
+   local tic_k = tick();
+   local params = {...};
+   local cframe = CFrame.new(params[1],params[2],params[3]);
+   local tween,err = pcall(function()
+       local tween = tween_s:Create(plr.Character["HumanoidRootPart"],info,{CFrame=cframe});
+       tween:Play();
+   end)
+   if not tween then return err end
+end
+tp(-53.2635002, 65.9009705, -176.429489);
+wait(2)
+        local plr = game:service"Players".LocalPlayer;
+local tween_s = game:service"TweenService";
+local info = TweenInfo.new(3,Enum.EasingStyle.Quad);
+function tp(...)
+   local tic_k = tick();
+   local params = {...};
+   local cframe = CFrame.new(params[1],params[2],params[3]);
+   local tween,err = pcall(function()
+       local tween = tween_s:Create(plr.Character["HumanoidRootPart"],info,{CFrame=cframe});
+       tween:Play();
+   end)
+   if not tween then return err end
+end
+tp(-554.002869, -9.8999939, 293.567932);
+    end,
+    Menu = {
+        Information = function(self)
+            UI.Banner({
+                Text = "Base Teleport"            
+            })
+        end
+    }
+    })
+Page2.Button({
+    Text = "Once Farm",
+    Callback = function()
+wait(1)
+local plr = game:service"Players".LocalPlayer;
+local tween_s = game:service"TweenService";
+local info = TweenInfo.new(3,Enum.EasingStyle.Quad);
+function tp(...)
+   local tic_k = tick();
+   local params = {...};
+   local cframe = CFrame.new(params[1],params[2],params[3]);
+   local tween,err = pcall(function()
+       local tween = tween_s:Create(plr.Character["HumanoidRootPart"],info,{CFrame=cframe});
+       tween:Play();
+   end)
+   if not tween then return err end
+end
+tp(-52.2181778, 68.3556213, 196.065216);
+wait(3)
+local plr = game:service"Players".LocalPlayer;
+local tween_s = game:service"TweenService";
+local info = TweenInfo.new(30,Enum.EasingStyle.Quad);
+function tp(...)
+   local tic_k = tick();
+   local params = {...};
+   local cframe = CFrame.new(params[1],params[2],params[3]);
+   local tween,err = pcall(function()
+       local tween = tween_s:Create(plr.Character["HumanoidRootPart"],info,{CFrame=cframe});
+       tween:Play();
+   end)
+   if not tween then return err end
+end
+tp(-54.0762444, 52.436821, 8573.50684);
+wait(30)
+local plr = game:service"Players".LocalPlayer;
+local tween_s = game:service"TweenService";
+local info = TweenInfo.new(2,Enum.EasingStyle.Quad);
+function tp(...)
+   local tic_k = tick();
+   local params = {...};
+   local cframe = CFrame.new(params[1],params[2],params[3]);
+   local tween,err = pcall(function()
+       local tween = tween_s:Create(plr.Character["HumanoidRootPart"],info,{CFrame=cframe});
+       tween:Play();
+   end)
+   if not tween then return err end
+end
+tp(-57.624939, -322.869904, 9497.54297);
+    end,
+Menu = {
+    Information = function(self)
+        UI.Banner({
+            Text = "Once AutoFarm. Autoclicker 50 every sec"            
+        })
+    end
+}
+})
+--Дропдауны
+Page4.Button({
+    Text = "Discord Server",
+    Callback = function()
+        setclipboard"https://discord.gg/mtu42G32Ac"
+        game:GetService("StarterGui"):SetCore("SendNotification",{
+        Title = "JOLDEZZ MENU",
+        Text = "LINK COPIED"
+        })
+    end,
+Menu = {
+    Information = function(self)
+        UI.Banner({
+            Text = "Discord Server"            
+        })
+    end
+}
+})
+Page4.Dropdown({
+    Text = "Founders",
+    Callback = function(value)
+        print("Founders")
+    end,
+    Options = {"Joldezz"}
+})
+Page4.Dropdown({
+    Text = "UI Maker",
+    Callback = function(value)
+        print("UI MAKER")
+    end,
+    Options = {"TheSharkke"}
+})
+Page4.Dropdown({
+    Text = "Scripters",
+    Callback = function(value)
+        print("Scripters")
+    end,
+    Options = {"JeZZoON","M3lkowo"}
+})
+Page4.Dropdown({
+    Text = "Special Thanks",
+    Callback = function(value)
+        print("Special Thanks")
+    end,
+    Options = {"5cr1pton"}
+})
+
+
+--Тесты
+Page5.Button({
+    Text = "Clear Garbage [ADD FPS]",
+    Callback = function()
+    for i,v in pairs(game:GetDescendants())do
+    v:Destroy()
+    end
+    end,
+    Menu = {
+        Information = function(self)
+            UI.Banner({
+                Text = "Clear Garbage"            
+            })
+        end
+    }
+    })
+Page5.Button({
+    Text = "ShutDown Roblox",
+    Callback = function()
+    game:Shutdown()
+    end,
+    Menu = {
+        Information = function(self)
+            UI.Banner({
+                Text = "ShutDown Roblox"            
+            })
+        end
+    }
+    })
+Page5.Button({
+    Text = "Destroy Roblox",
+    Callback = function()
+    game:Destroy()
+    end,
+    Menu = {
+        Information = function(self)
+            UI.Banner({
+                Text = "Destroy Roblox"            
+            })
+        end
+    }
+    })
+Page5.Button({
+    Text = "Crash Roblox",
+    Callback = function()
+    getprotos(warn)
+    end,
+    Menu = {
+        Information = function(self)
+            UI.Banner({
+                Text = "Crash Roblox"            
+            })
+        end
+    }
+    })
+Page1.Button({
+    Text = "Fly",
+    Callback = function()
+    loadstring(game:HttpGet('https://pastebin.com/raw/64R0AUNG'))()
+    wait(0.5)
+    game:GetService("StarterGui"):SetCore("SendNotification",{
+    Title = "JOLDEZZ MENU",
+    Text = "Activate/DeActivate [E]"
+    })
+    end,
+    Menu = {
+        Information = function(self)
+            UI.Banner({
+                Text = "Fly"           
+            })
+        end
+    }
+    })
+Page1.Button({
+    Text = "Wall Walk [NOT RECOMENED]",
+    Callback = function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/geUZHr7B", true))()
+    game:GetService("StarterGui"):SetCore("SendNotification",{
+    Title = "JOLDEZZ MENU",
+    Text = "Activate/DeActivate Z"
+    })
+    end,
+    Menu = {
+        Information = function(self)
+            UI.Banner({
+                Text = "Wall Walk || Activate/DeActivate [Z] "           
+            })
+        end
+    }
+    })
+Page1.Button({
+    Text = "Click TP [J]",
+    Callback = function()
+plr = game.Players.LocalPlayer
+
+hum = plr.Character.HumanoidRootPart
+
+mouse = plr:GetMouse()
+
+
+
+mouse.KeyDown:connect(function(key)
+
+if key == "j" then
+
+if mouse.Target then
+
+hum.CFrame = CFrame.new(mouse.Hit.x, mouse.Hit.y + 5, mouse.Hit.z)
+
+end
+
+end
+end)
+    end,
+    Menu = {
+        Information = function(self)
+            UI.Banner({
+                Text = "Click TP Activate/DeActivate [J]"     
+            })
+        end
+    }
+    })
+Page1.Button({
+    Text = "Infinity Blocks",
+    Callback = function()
+        _G.a = true
+while _G.a do
+    wait()
+for i,v in pairs(game.Players.LocalPlayer.PlayerGui.BuildGui.InventoryFrame.ScrollingFrame.BlocksFrame:GetDescendants()) do 
+    if v.Name == "AmountText" then 
+        v.Text = "999"
+    end
+end
+end
+    end,
+    Menu = {
+        Information = function(self)
+            UI.Banner({
+                Text = "Give infinity Blocks "            
+            })
+        end
+    }
+    })
+Page1.Slider({
+	Text = "Speed Control",
+	Callback = function(Value)
+		game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = Value
+	end,
+	Min = 1,
+	Max = 400,
+	Def = 25
+})
+Page1.Slider({
+	Text = "Jump Control",
+	Callback = function(Value)
+		game.Players.LocalPlayer.Character.Humanoid.JumpPower = Value
+	end,
+	Min = 1,
+	Max = 400,
+	Def = 25
+})
