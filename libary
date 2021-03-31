@@ -53,7 +53,7 @@ function Library.Category(name,description,clr)
 	thing.TextXAlignment = Enum.TextXAlignment.Left
 	
 	Frame.Parent = thing
-	Frame.BackgroundColor3 = Color3.fromRGB(248,248,255)
+	Frame.BackgroundColor3 = Color3.fromRGB(30, 31, 29)
 	Frame.BorderSizePixel = 0
 	Frame.ClipsDescendants = true
 	Frame.Position = UDim2.new(1.03499997, 0, 0, 0)
