@@ -1,10 +1,4 @@
-- 👋 Hi, I’m @Joldezz
-- 👀 I’m interested in ...
-- 🌱 I’m currently learning ...
-- 💞️ I’m looking to collaborate on ...
-- 📫 How to reach me ...
-
-<!---
-Joldezz/Joldezz is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+Programming Languages: Lua, Python
+Projects: Neptune Secure, Neptunity
+Site: https://neptunity.space/
+Discord: Joldezz#3876 / https://discord.gg/2AxG7FhqPu
