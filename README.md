@@ -1,5 +1,7 @@
 Programming Languages: Lua, Python
 
+Learning: JS, C#
+
 Projects: Neptune Secure, Neptunity
 
 Site: https://neptunity.space/
